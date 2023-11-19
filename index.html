@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:"Poppins", sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 77px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333333;
+            padding: 20px 0;
+            text-emphasis: none;
+            color: #ffff;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: fixed;
+            z-index: 2;
+
+        }
+        nav {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+        nav ol li{
+            display: flex;
+            display: inline-block;
+            list-style: none;
+            margin-left: 40px;
+            font-weight: 500;
+        }
+        .logo h2{
+            font-weight: 700;
+            padding-left: 10px;
+        }
+        .homepage{
+            height: 100vh;
+            width: 100%;
+            background-image: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+            background-repeat: no-repeat;
+            background-size:cover ;
+            position: relative;
+            background-position: center 65%;
+            background-attachment: fixed;
+           opacity: 2;
+        }
+        .homepage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: auto;
+            position: relative;
+            align-content: center;
+          
+        }
+        .content .text{
+            margin-bottom: 50px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+        }
+        .content a{
+            
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    display: inline;
+    margin-left: 40%;
+}
+           
+        
+        .content .text h1{
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .main{
+            margin-top: 20p;
+            width: 100%;
+            height: 100%;
+         
+           overflow: hidden;
+          
+        }
+        .main h2{
+            display: block;
+            font-size: 2rem;
+        }
+        .content1{
+            width: 100%;
+            height:200px ;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 0pc;
+           
+        }
+        .cards{
+            display: flex;
+            width: 100%;
+            height: 140vh;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+      
+        }
+        .card{
+        
+            background-color: black;
+            justify-content: center;
+            align-content: center;
+            background: #fff;
+            padding: 40px 15px;
+            list-style: none;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+            margin-bottom: 40px;
+            width: calc(100% / 3 - 30px);
+            text-align: center;
+            width: 350px;
+            height: 350px;
+    
+        }
+        .card img{
+            width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+        }
+        main{
+            background-color: #F2F2F2;
+        }
+        .aboutus{
+            padding:42px
+        }
+        h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.center1 {
+    text-align: center;   
+}
+.size1{
+    font-size: 2em;
+    
+}
+.aboutus{
+    padding-top: 10px;
+}
+.ContactUs{
+    width: 100%;
+    height: 600px;
+    
+
+}
+.contactinfo{
+    display: flex;
+   
+    width: 90vw;
+    display: inline-block;
+    padding: 0 10px;
+   
+}
+#ContactUs1{
+    height: 10vh;
+    width: 100%;
+
+    
+}
+.ContactUs-main{
+    display: flex;
+    height: 100vh;
+    width: 90%;
+    margin-bottom: 100px;
+   
+}
+.detatils{
+    display: flex;
+   justify-content: flex-start;
+   align-content: center;
+   text-align: center;
+   vertical-align: middle;
+   margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+    </style>
+    <title>project1</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <h2>LOGO</h2>
+        </section>
+        <nav>
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section class="homepage" id="home">
+        <section class="content">
+            <div class="text">
+                <h1>Camping Gear and Essentials</h1>
+                <p>Discover top-quality camping gear for unforgettable outdoor adventures.
+                <br>
+                Gear up and make lasting memories.</p>
+            </div>
+            <a href="#services" style="color: black;">Our Services</a>
+        </section>
+    </section>
+    <main>
+        <section class="main"  id="services" >
+          <section class="content1">
+           <h2 >Our Services</h2>
+           <p>Explore our wide range of camping gear services</p>
+          </section>
+          <section class="cards">
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Tents</h3>
+                <p>Experience comfort and protection with our high-quality camping tents.</p>
+            </section>
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Sleeping Bags</h3>
+                <p>Stay cozy and warm during your camping trips with our premium sleeping bags.</p>
+            </section>
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Camp Stoves</h3>
+                <p>Cook delicious meals in the great outdoors with our reliable camp stoves.</p>
+            </section>
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Backpacks</h3>
+                <p>Carry your essentials comfortably with our durable and functional camping backpacks.</p>
+            </section>
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Camp Chairs</h3>
+                <p>Relax and unwind in style with our comfortable and portable camping chairs.</p>
+            </section>
+            <section class="card">
+                <img src="https://media.timeout.com/images/105658195/image.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                <h3>Camp Lights</h3>
+                <p>Illuminate your campsite with our reliable and energy-efficient camping lights.</p>
+            </section>
+          </section>
+        </section>
+        <section class="aboutus" id="aboutus" >
+            <section id="aboutus">
+            <h1 class="center1 size1">About Us</h1>
+            <p class="center1">Discover our story in providing camping services.</p>
+            </section>
+            <h3>Our Story</h3>
+            <p>Experience the excellence of our camping gear and services, where we have been offering high-quality camping essentials and gear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
+            <h3>Our Mission</h3>
+            <p>At Camping Gear Experts, our mission is to equip outdoor enthusiasts with top-notch camping gear and essentials that enhance their outdoor experiences. We strive to provide reliable, durable, and innovative products that contribute to memorable adventures and lasting memories.</p>
+            <h3>Our Vision</h3>
+            <p>Our vision is to become the go-to destination for camping enthusiasts, known for our extensive selection of premium camping gear and exceptional customer service. We aspire to inspire and enable people to embrace the beauty of nature and create unforgettable camping experiences.</p>
+            <h3>Our Team</h3>
+            <ul style="list-style-position: inside;">
+                <li>John Doe - Founder and CEO</li>
+                <li>Jane Smith - Gear Specialist</li>
+                <li>Mark Johnson - Customer Representative</li>
+                <li>Sarah Brown - Operations Manager</li>
+            </ul>
+        </section>
+        
+        <section class="ContactUs1" id="ContactUs" >
+                <h1 class="center1 size1">Contact Us</h1>
+                <p class="center1 ">Reach out to us for any inquiries or feedback.</p>
+                <section class="ContactUs-main" style="margin-top: 30px; height: 60vh;" >
+                    <section class="contactinfo" >
+                        
+                    <div class="detatils" >
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p style="padding-left: 10px;padding-right: 0;">123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </div>
+                    <div class="detatils">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p style="padding-left: 10px;padding-right: 0;"> info@campinggearexperts.com</p>
+                    </div>
+                        <div class="detatils">
+                        <i class="fa-solid fa-phone"></i>
+                        <p style="padding-left: 10px;padding-right: 0;"> (123) 456-7890</p>
+                    </div>
+                        <div class="detatils">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="padding-left: 10px;padding-right: 0;"> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="detatils">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="padding-left: 10px;padding-right: 0;"> Saturday: 10:00 AM - 3:00 PM</p>
+                        </div>
+                        <div class="detatils">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="padding-left: 10px;padding-right: 0;">Sunday: Closed</p>
+                        </div>
+                        <div class="detatils">
+                        <i class="fa-solid fa-globe"></i>
+                        <P style="padding-left: 10px;padding-right: 0;"> www.codingnepalweb.com</P>
+                        </div>
+                    </section>
+                    <section class="contactinfo">
+                        <form action="">
+                            
+                            <input type="text" name=""  id="" placeholder="name*" style="margin-left: 20px; padding: 5px;margin-bottom: 5px; width: 100% "  ;>
+                            <br>
+                            <input type="email" name="" id="" placeholder="email" style="margin-left: 20px; padding: 5px; width: 100%";><br>
+                            <textarea name="" id="" cols="30" rows="10" style="margin-left: 20px; padding: 5px; margin-top: 10px; width: 100%;" ></textarea>
+                        </form>
+                    </section>
+
+                </section>
+        </section>
+    </main>
+</body>
+</html>
